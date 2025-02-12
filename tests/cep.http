@@ -1,0 +1,19 @@
+### CEP válido Local
+GET http://localhost:8080/cep/04538133 http/1.1
+
+### CEP Inválido
+GET http://localhost:8080/cep/abcd http/1.1
+
+### CEP inexistente
+GET http://localhost:8080/cep/00000000 http/1.1
+
+### ---
+
+### CEP válido Cloud Run
+GET https://go-expert-cloudrun-bwktcvjkma-rj.a.run.app/cep/04538133  http/1.1
+
+### CEP Inválido
+GET http://go-expert-cloudrun-bwktcvjkma-rj.a.run.app/cep/abcd http/1.1
+
+### CEP inexistente
+GET http://go-expert-cloudrun-bwktcvjkma-rj.a.run.app/cep/00000000 http/1.1
